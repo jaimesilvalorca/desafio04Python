@@ -2,10 +2,10 @@ with open("lorem_ipsum.txt", "r") as file:
     texto=file.read()
   
   
-caracteres = []
+caracteres:list = []
 
 def contador_de_palabras(texto):
-    texto_split = texto.split(" ")
+    texto_split:list = texto.split(" ")
     contar_palabras = set(texto_split)
     return set(contar_palabras)
     
@@ -16,8 +16,8 @@ def contador_de_caracteres(texto):
     return set(caracteres)
 
     
-contar_caracteres = contador_de_caracteres(texto)
-contar_palabras = contador_de_palabras(texto)
+contar_caracteres:str = contador_de_caracteres(texto)
+contar_palabras:str = contador_de_palabras(texto)
 
 print(f"El número de caracteres distintos es: {len(contar_caracteres)}")
 print(f"El número de palabras distintas es: {len(contar_palabras)}")
