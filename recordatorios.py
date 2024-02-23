@@ -4,7 +4,14 @@ recordatorios = [['2021-01-01', "11:00", "Levantarse y ejercitar"],
  ['2021-09-18', "16:00", "Ramadas"],
  ['2021-12-25', "00:00", "Navidad"]]
 
-recordatorios.insert(1,['2021-02-02','06:00',"Empezar el Año"])
+
+#---------------------------En todos las preguntas del documento indique dos formas de insertar,modificar o eliminar los elementos de la lista----------------------#
+
+# recordatorios.insert(1,['2021-02-02','06:00',"Empezar el Año"])
+
+for i,recordatorio in enumerate(recordatorios):
+    if recordatorio == ['2021-01-01', "11:00", "Levantarse y ejercitar"]:
+        recordatorios.insert(i+1,['2021-02-02','06:00',"Empezar el Año"])
 
 #Aquí indico dos posibles opciones una con metodos pop e insert y la otra es recorriendo la lista.
 
